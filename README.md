@@ -69,19 +69,23 @@ sbatch run.sh
 
 ### A nodes
 CPU : AMD 5975WX
-**32 Cores** 64 Threads
+32 Cores 64 Threads
 GPUS : 2 x RTX A6000 48GB
+Total CPU cores: **32 cores**
 Total GPU memory : 96GB
 
 ### B nodes
-CPU : Xeon 6444Y
-**16 Cores** 32 Threads
+CPU : 2 x Xeon 6444Y
+16 Cores 32 Threads
+Total CPU cores : **32 cores**
 GPUS : 4 x RTX4090 24GB
 Total GPU memory : 96GB
 
 ### C node
-CPU : AMD7763
-**64 Cores** 128 Threads
+CPU : 2 x AMD7763
+64 Cores 128 Threads
+Total CPU cores: **128 cores**
+GPUS : 4 x A800 80GB
 Total GPU memory : 320GB
 ##### note for C node
 When using C node, make sure you use enough KPAR / NSIM to fully occupy the GPU , else it would be the same as the b node and wasting compute power
